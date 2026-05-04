@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ПереводБай — Бюро переводов в Минске</title>
+    <meta
+      name="description"
+      content="Письменные и устные переводы, нотариальное заверение, апостиль и легализация документов в Минске."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-wrap">
+        <a class="logo" href="#top" aria-label="ПереводБай">
+          <span class="logo-mark">PB</span>
+          <span class="logo-text">ПереводБай</span>
+        </a>
+
+        <div class="header-controls">
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Переключить тему"
+            title="Переключить тему"
+          >
+            <span class="theme-toggle__label">Тема</span>
+            <span id="theme-state" class="theme-toggle__state">Светлая</span>
+          </button>
+          <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav id="menu" class="menu" aria-label="Главное меню">
+          <a href="#services">Услуги</a>
+          <a href="#process">Как работаем</a>
+          <a href="#about">О компании</a>
+          <a href="#contacts">Контакты</a>
+          <a class="menu-phone" href="tel:+375445581642">+375 (44) 558-16-42</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-reveal">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Бюро переводов в Минске</p>
+            <h1>Переводы, которые принимают с первого раза</h1>
+            <p class="lead">
+              Официальные документы, бизнес-контракты, технические тексты и медицинские справки.
+              Работаем быстро, точно и с соблюдением требований посольств и госорганов.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-main" href="#contacts">Оставить заявку</a>
+              <a class="btn btn-ghost" href="#services">Смотреть услуги</a>
+            </div>
+
+            <ul class="hero-points">
+              <li>Нотариальное заверение и апостиль</li>
+              <li>Срочные заказы в день обращения</li>
+              <li>Дистанционная подача документов</li>
+            </ul>
+          </div>
+
+          <aside class="hero-card" aria-label="Ключевые показатели">
+            <h2>С нами спокойно</h2>
+            <dl>
+              <div>
+                <dt>14+</dt>
+                <dd>лет на рынке переводов</dd>
+              </div>
+              <div>
+                <dt>50+</dt>
+                <dd>языковых направлений</dd>
+              </div>
+              <div>
+                <dt>24/7</dt>
+                <dd>прием заявок онлайн</dd>
+              </div>
+            </dl>
+            <p>Офис: Минск, ул. Воронянского 7А, офис 801</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="services" class="section services section-reveal">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Что мы переводим</p>
+            <h2>Услуги под личные и бизнес-задачи</h2>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <h3>Личные документы</h3>
+              <p>Паспорта, свидетельства, справки, дипломы, доверенности.</p>
+            </article>
+            <article class="card">
+              <h3>Юридические тексты</h3>
+              <p>Договоры, учредительные документы, судебные материалы.</p>
+            </article>
+            <article class="card">
+              <h3>Технический перевод</h3>
+              <p>Инструкции, спецификации, чертежи, производственная документация.</p>
+            </article>
+            <article class="card">
+              <h3>Медицинский перевод</h3>
+              <p>Заключения, выписки, анализы, документация для лечения за рубежом.</p>
+            </article>
+            <article class="card">
+              <h3>Для посольств и виз</h3>
+              <p>Подготовка пакета документов с учетом требований конкретной страны.</p>
+            </article>
+            <article class="card">
+              <h3>Апостиль и легализация</h3>
+              <p>Сопровождаем процесс и подсказываем по срокам и доверенности.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section process section-reveal">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Прозрачный процесс</p>
+            <h2>Как проходит заказ</h2>
+          </div>
+
+          <ol class="steps">
+            <li>
+              <span>1</span>
+              <div>
+                <h3>Отправляете документы</h3>
+                <p>В мессенджер, на email или приносите в офис.</p>
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>
+                <h3>Согласуем сроки и цену</h3>
+                <p>Фиксируем стоимость до старта работ.</p>
+              </div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                <h3>Делаем перевод и заверение</h3>
+                <p>Подготавливаем документы под требования инстанций.</p>
+              </div>
+            </li>
+            <li>
+              <span>4</span>
+              <div>
+                <h3>Передаем готовый пакет</h3>
+                <p>Самовывоз, курьер или отправка удобным способом.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="about" class="section about section-reveal">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">Почему ПереводБай</p>
+            <h2>Точность формулировок и ответственность за результат</h2>
+            <p>
+              Работаем с 2012 года и закрываем задачи от срочного перевода одного документа до
+              комплексного сопровождения компаний. Наша команда учитывает терминологию отрасли и
+              проверяет формат под требования принимающей стороны.
+            </p>
+          </div>
+          <div class="about-tags">
+            <span>Конфиденциальность</span>
+            <span>Опытные переводчики</span>
+            <span>Соблюдение дедлайнов</span>
+            <span>Удобная оплата</span>
+            <span>Поддержка менеджера</span>
+            <span>Работаем по договору</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="section contacts section-reveal">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Связаться с нами</p>
+            <h2>Оставьте заявку, и мы ответим в рабочее время</h2>
+            <ul class="contact-list">
+              <li><strong>Телефон:</strong> <a href="tel:+375445581642">+375 (44) 558-16-42</a></li>
+              <li><strong>Email:</strong> <a href="mailto:perevodby24@gmail.com">perevodby24@gmail.com</a></li>
+              <li><strong>График:</strong> Пн-Пт, 10:00-18:00</li>
+              <li><strong>Адрес:</strong> Минск, Воронянского 7А, офис 801</li>
+            </ul>
+          </div>
+
+          <form class="contact-form" action="#" method="post">
+            <label>
+              Имя
+              <input type="text" name="name" placeholder="Как к вам обращаться" required />
+            </label>
+            <label>
+              Телефон
+              <input type="tel" name="phone" placeholder="+375 (__) ___-__-__" required />
+            </label>
+            <label>
+              Что нужно перевести
+              <textarea name="message" rows="4" placeholder="Кратко опишите задачу"></textarea>
+            </label>
+            <button class="btn btn-main" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> ПереводБай. Все права защищены.</p>
+        <a href="#top">Наверх</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Перевод с / на иврит — ПереводБай</title>
+    <meta name="description" content="от 45 рублей за страницу" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container header-wrap">
+        <a class="logo" href="/#top" aria-label="ПереводБай">
+          <span class="logo-mark">PB</span>
+          <span class="logo-text">ПереводБай</span>
+        </a>
+
+        <div class="header-controls">
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Переключить тему"
+            title="Переключить тему"
+          >
+            <span class="theme-toggle__label">Тема</span>
+            <span id="theme-state" class="theme-toggle__state">Светлая</span>
+          </button>
+          <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav id="menu" class="menu" aria-label="Главное меню">
+          <div class="menu-dropdown">
+            <a class="menu-dropdown__link" href="/#services">Услуги</a>
+            <button
+              class="menu-dropdown__toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="services-menu"
+              aria-label="Открыть список услуг"
+            >
+              <span aria-hidden="true">▾</span>
+            </button>
+            <div id="services-menu" class="menu-dropdown__panel" aria-label="Каталог услуг">
+              <div class="menu-dropdown__standalone">
+                <a href="/services/apostil-dokumentov">Апостиль документов</a>
+              </div>
+
+              <div class="menu-dropdown__group">
+                <p>Отраслевой перевод</p>
+                <a href="/services/ekonomicheskiy-perevod">Экономический перевод</a>
+                <a href="/services/farmatsevticheskiy-perevod">Фармацевтический перевод</a>
+                <a href="/services/meditsinskiy-perevod">Медицинский перевод</a>
+                <a href="/services/perevod-dlya-turagentstv">Перевод для турагентства</a>
+                <a href="/services/perevod-konstruktorskoy-dokumentatsii">Перевод конструкторской документации</a>
+                <a href="/services/perevod-kommercheskikh-dokumentov">Перевод коммерческих документов</a>
+                <a href="/services/perevod-instruktsiy">Перевод инструкций</a>
+                <a href="/services/yuridicheskiy-perevod">Юридический перевод</a>
+                <a href="/services/tekhnicheskiy-perevod">Технический перевод</a>
+              </div>
+
+              <div class="menu-dropdown__group">
+                <p>Языковые переводы</p>
+                <a href="/services/perevod-s-na-angliyskiy-yazyk">Перевод с / на английский язык</a>
+                <a href="/services/perevod-s-na-arabskiy-yazyk">Перевод с / на арабский язык</a>
+                <a href="/services/perevod-s-na-armyanskiy-yazyk">Перевод с / на армянский язык</a>
+                <a href="/services/perevod-s-na-frantsuzskiy-yazyk">Перевод с / на французский язык</a>
+                <a href="/services/perevod-s-na-grecheskiy-yazyk">Перевод с / на греческий язык</a>
+                <a href="/services/perevod-s-na-gruzinskiy-yazyk">Перевод с / на грузинский язык</a>
+                <a href="/services/perevod-s-na-ispanskiy-yazyk">Перевод с / на испанский язык</a>
+                <a href="/services/perevod-s-na-italyanskiy-yazyk">Перевод с / на итальянский язык</a>
+                <a href="/services/perevod-s-na-ivrit-yazyk">Перевод с / на иврит</a>
+                <a href="/services/perevod-s-na-kazakhskiy-yazyk">Перевод с / на казахский язык</a>
+                <a href="/services/perevod-s-na-kitayskiy-yazyk">Перевод с / на китайский язык</a>
+                <a href="/services/perevod-s-na-latyshskiy-yazyk">Перевод с / на латышский язык</a>
+                <a href="/services/perevod-s-na-litovskiy-yazyk">Перевод с / на литовский язык</a>
+                <a href="/services/perevod-s-na-nemetskiy-yazyk">Перевод с / на немецкий язык</a>
+                <a href="/services/perevod-s-na-persidskiy-yazyk">Перевод с / на персидский язык</a>
+                <a href="/services/perevod-s-na-polskiy-yazyk">Перевод с / на польский язык</a>
+                <a href="/services/perevod-s-na-portugalskiy-yazyk">Перевод с / на португальский язык</a>
+                <a href="/services/perevod-s-na-rumynskiy-yazyk">Перевод с / на румынский язык</a>
+                <a href="/services/perevod-s-na-serbskiy-yazyk">Перевод с / на сербский язык</a>
+                <a href="/services/perevod-s-na-tadzhikskiy-yazyk">Перевод с / на таджикский язык</a>
+                <a href="/services/perevod-s-na-turetskiy-yazyk">Перевод с / на турецкий язык</a>
+              </div>
+
+              <div class="menu-dropdown__group">
+                <p>Перевод документов</p>
+                <a href="/services/perevod-pasportov">Перевод паспорта</a>
+                <a href="/services/perevod-attestata">Перевод аттестата</a>
+                <a href="/services/perevod-deklaratsiy">Перевод деклараций</a>
+                <a href="/services/perevod-diploma">Перевод диплома</a>
+                <a href="/services/perevod-dogovorov">Перевод договора</a>
+                <a href="/services/perevod-svidetelstv">Перевод свидетельств</a>
+                <a href="/services/perevod-doverennosti">Перевод доверенности</a>
+                <a href="/services/perevod-dokumentov">Другие документы</a>
+                <a href="/services/perevod-spravok">Перевод справок</a>
+                <a href="/services/perevod-soglasiya-na-vyezd">Перевод согласия на выезд</a>
+                <a href="/services/perevod-trudovoy-knizhki">Перевод трудовой книжки</a>
+                <a href="/services/perevod-voditelskikh-prav">Перевод водительских прав</a>
+                <a href="/services/perevod-uchreditelnykh-dokumentov">Перевод учредительных документов</a>
+                <a href="/services/perevod-vypisok">Перевод выписок</a>
+                <a href="/services/perevod-zachetnykh-knizhek">Перевод зачетных книжек</a>
+                <a href="/services/perevod-sertifikatov">Перевод сертификатов</a>
+              </div>
+
+              <div class="menu-dropdown__group">
+                <p>Перевод для посольств</p>
+                <a href="/services/perevod-dokumentov-dlya-posolstva-germanii">Посольство Германии</a>
+                <a href="/services/perevod-dokumentov-dlya-posolstva-izrailya">Посольство Израиля</a>
+                <a href="/services/perevod-dokumentov-dlya-posolstva-kipra">Посольство Кипра</a>
+                <a href="/services/perevod-dokumentov-dlya-posolstva-ssha">Посольство США</a>
+                <a href="/services/perevod-dokumentov-dlya-posolstva-tailanda">Посольство Таиланда</a>
+                <a href="/services/perevod-dokumentov-dlya-posolstva-velikobritanii">Посольство Великобритании</a>
+              </div>
+
+              <div class="menu-dropdown__standalone">
+                <a href="/services/lokalizatsiya-programmnogo-obespecheniya">Локализация программного обеспечения</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="/services/notarialnoe-zavereniye-perevoda">Перевод с нотариальным заявлением</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="/services/perevod-dokumentov-dlya-vizy">Перевод документов для визы</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="/services/lokalizatsiya-perevod-igr">Локализация игр</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="/services/legalizatsiya-dokumentov">Легализация документов</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="/services/lokalizatsiya-perevod-saytov">Перевод сайтов</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="/services/perevod-pechati-na-dokumente">Перевод печати на документе</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="/services/posledovatelnyy-perevod">Синхронный и последовательный перевод</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="/services/zavereniye-perevoda-pechatyami">Заверение перевода печатями</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="/services/zavereniye-perevoda">Перевод с заверением</a>
+              </div>
+            </div>
+          </div>
+          <a href="/#trust">Гарантии</a>
+          <div class="menu-dropdown menu-dropdown--compact">
+            <a class="menu-dropdown__link" href="/pages/about">О нас</a>
+            <button
+              class="menu-dropdown__toggle"
+              type="button"
+              aria-expanded="false"
+              aria-label="Открыть раздел о компании"
+            >
+              <span aria-hidden="true">▾</span>
+            </button>
+            <div class="menu-dropdown__panel" aria-label="О компании">
+              <div class="menu-dropdown__standalone">
+                <a href="/pages/methods">Условия оплаты и методы работы</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="/pages/about">О нас</a>
+              </div>
+            </div>
+          </div>
+          <a href="/pages/b2b">B2B</a>
+          <a href="/#reviews">Отзывы</a>
+          <a href="/#contacts">Контакты</a>
+          <div class="menu-contact">
+            <a class="menu-phone" href="tel:+375445581642">+375 (44) 558-16-42</a>
+            <div class="menu-messengers" aria-label="Мессенджеры">
+              <a href="https://wa.me/375445581642" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a href="https://t.me/+375445581642" target="_blank" rel="noreferrer">Telegram</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section id="service-page" class="section service-page">
+        <div class="container service-page__grid">
+          <article class="service-page__content">
+            <a class="service-page__back" href="/#services">← Все услуги</a>
+            <p class="eyebrow">Услуга бюро переводов</p>
+            <h1 id="service-page-title">Перевод с / на иврит</h1>
+            <p id="service-page-description" class="service-page__lead">от 45 рублей за страницу</p>
+            <div id="service-page-details" class="service-page__details">
+<p>Наше бюро предлагает услуги перевода текстов и документов с иврита на русский язык и обратно</p>
+<h2>Перевод с иврита на русский</h2>
+<p>Наше бюро переводов предлагает профессиональные услуги перевода различных текстов на разные языки. Мы работаем с опытными переводчиками, которые гарантируют высокое качество переводов в срок. Мы переводим документы, веб-сайты, маркетинговые материалы, технические тексты и многое другое. Мы также предлагаем нотариальное заверение переводов и легализацию документов. Свяжитесь с нами сегодня, чтобы узнать больше о наших услугах и получить бесплатную консультацию.</p>
+<p>Преимущества нашего бюро переводов «ПереводБай»</p>
+<p>Высокий темп переводов</p>
+<p>Наши переводчики — профессионалы с опытом работы более 10 лет, мы переводим без задержек.</p>
+<p>Современные и удобные инструменты для сотрудничества</p>
+<p>Вам не обязательно приезжать к нам в офис. Все работы мы можем произвести удаленно и отправить Вам готовые документы любым удобным для Вас способом.</p>
+<p>Гибкая система скидок для постоянных клиентов.</p>
+<p>Переводите больше - платите меньше.</p>
+<p>Удобный способ оплаты</p>
+<p>Мы принимаем оплату любым удобным для Вас способом: Наличный, безналичные, ЕРИП, перевод</p>
+            </div>
+            <div class="service-page__actions">
+              <a class="btn btn-main" href="#service-order-form">Оставить заявку</a>
+              <a class="btn btn-ghost" href="tel:+375445581642">Позвонить</a>
+            </div>
+          </article>
+
+          <form
+            id="service-order-form"
+            class="contact-form contact-form-v2 service-page__form"
+            action="/api/order"
+            method="post"
+            enctype="multipart/form-data"
+            data-order-form
+          >
+            <div class="form-head">
+              <h3>Отправьте документы на расчет</h3>
+              <p id="service-form-note">Заявка будет отправлена по услуге: Перевод с / на иврит.</p>
+            </div>
+
+            <input id="service-form-service" type="hidden" name="service" value="Перевод с / на иврит" />
+
+            <label class="visually-hidden" aria-hidden="true">
+              Компания
+              <input type="text" name="company" tabindex="-1" autocomplete="off" />
+            </label>
+
+            <label>
+              Имя
+              <input type="text" name="name" placeholder="Как к вам обращаться" required />
+            </label>
+            <label>
+              Телефон (WhatsApp/Viber) *
+              <input type="tel" name="phone" placeholder="+375 (__) ___-__-__" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="name@example.com" />
+            </label>
+            <label>
+              Срочность
+              <select name="urgency">
+                <option>Обычный срок</option>
+                <option>Срочно сегодня/завтра</option>
+                <option>Очень срочно за 3-6 часов</option>
+              </select>
+            </label>
+            <label>
+              Комментарий к заказу
+              <textarea
+                name="comment"
+                rows="3"
+                placeholder="Укажите язык, страну подачи, требования к заверению и срок"
+              ></textarea>
+            </label>
+
+            <label class="file-field">
+              Прикрепите файлы (jpg, pdf, doc) *
+              <input
+                type="file"
+                name="files"
+                accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.rtf"
+                multiple
+                required
+              />
+              <span class="file-field__button">Выбрать файлы</span>
+              <span class="file-field__text">Можно выбрать несколько файлов. До 5 файлов, каждый до 10 МБ.</span>
+            </label>
+
+            <label class="checkbox checkbox-v2">
+              <input type="checkbox" name="consent" required />
+              <span>
+                Даю согласие на обработку персональных данных согласно
+                <a href="/pages/privacy">политике обработки данных</a>.
+              </span>
+            </label>
+
+            <button class="btn btn-main" type="submit">
+              Отправить заявку → Менеджер ответит через 15 минут
+            </button>
+            <p class="form-status" aria-live="polite" data-form-status></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div class="footer-copy">
+          <p>© <span id="year"></span> ООО «ПереводБай». Все права защищены.</p>
+          <p>УНП 193641759 • Минск, Воронянского 7А, офис 801</p>
+        </div>
+        <div class="footer-links">
+          <a href="/pages/offer">Договор публичной оферты</a>
+          <a href="/pages/privacy">Политика конфиденциальности</a>
+          <a href="/pages/methods">Условия оплаты</a>
+          <a href="/#top">Наверх</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/services-data.js"></script>
+    <script src="/services-content.js"></script>
+    <script src="/pages-data.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

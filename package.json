@@ -1,0 +1,32 @@
+{
+  "name": "perevod-by",
+  "version": "1.0.0",
+  "description": "Сайт бюро переводов ПереводБай с серверной обработкой формы заказа.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "generate:services": "node scripts/generate-service-pages.js",
+    "test": "node --check server.js && node --check script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razilkik-ops/perevodby.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/razilkik-ops/perevodby/issues"
+  },
+  "homepage": "https://github.com/razilkik-ops/perevodby#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "multer": "^2.1.1",
+    "nodemailer": "^8.0.7"
+  }
+}

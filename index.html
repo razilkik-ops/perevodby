@@ -6,7 +6,7 @@
     <title>ПереводБай — Бюро переводов в Минске</title>
     <meta
       name="description"
-      content="Письменные и устные переводы, нотариальное заверение, апостиль и легализация документов в Минске."
+      content="Письменные переводы, нотариальное заверение, апостиль и срочные заказы для бизнеса, посольств и частных клиентов в Минске."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="page-glow" aria-hidden="true"></div>
@@ -44,35 +44,287 @@
         </div>
 
         <nav id="menu" class="menu" aria-label="Главное меню">
-          <a href="#services">Услуги</a>
-          <a href="#process">Как работаем</a>
-          <a href="#about">О компании</a>
+          <div class="menu-dropdown">
+            <a class="menu-dropdown__link" href="#services">Услуги</a>
+            <button
+              class="menu-dropdown__toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="services-menu"
+              aria-label="Открыть список услуг"
+            >
+              <span aria-hidden="true">▾</span>
+            </button>
+            <div id="services-menu" class="menu-dropdown__panel" aria-label="Каталог услуг">
+              <div class="menu-dropdown__standalone">
+                <a href="#service-apostille">Апостиль документов</a>
+              </div>
+
+              <div class="menu-dropdown__group">
+                <p>Отраслевой перевод</p>
+                <a href="#service-economic-translation">Экономический перевод</a>
+                <a href="#service-pharma-translation">Фармацевтический перевод</a>
+                <a href="#service-medical-translation">Медицинский перевод</a>
+                <a href="#service-tourism-translation">Перевод для турагентства</a>
+                <a href="#service-engineering-translation">Перевод конструкторской документации</a>
+                <a href="#service-commercial-translation">Перевод коммерческих документов</a>
+                <a href="#service-instruction-translation">Перевод инструкций</a>
+                <a href="#service-legal-translation">Юридический перевод</a>
+                <a href="#service-technical-translation">Технический перевод</a>
+              </div>
+
+              <div class="menu-dropdown__group">
+                <p>Языковые переводы</p>
+                <a href="#service-english">Перевод с / на английский язык</a>
+                <a href="#service-arabic">Перевод с / на арабский язык</a>
+                <a href="#service-armenian">Перевод с / на армянский язык</a>
+                <a href="#service-french">Перевод с / на французский язык</a>
+                <a href="#service-greek">Перевод с / на греческий язык</a>
+                <a href="#service-georgian">Перевод с / на грузинский язык</a>
+                <a href="#service-spanish">Перевод с / на испанский язык</a>
+                <a href="#service-italian">Перевод с / на итальянский язык</a>
+                <a href="#service-hebrew">Перевод с / на иврит</a>
+                <a href="#service-kazakh">Перевод с / на казахский язык</a>
+                <a href="#service-chinese">Перевод с / на китайский язык</a>
+                <a href="#service-latvian">Перевод с / на латышский язык</a>
+                <a href="#service-lithuanian">Перевод с / на литовский язык</a>
+                <a href="#service-german">Перевод с / на немецкий язык</a>
+                <a href="#service-persian">Перевод с / на персидский язык</a>
+                <a href="#service-polish">Перевод с / на польский язык</a>
+                <a href="#service-portuguese">Перевод с / на португальский язык</a>
+                <a href="#service-romanian">Перевод с / на румынский язык</a>
+                <a href="#service-serbian">Перевод с / на сербский язык</a>
+                <a href="#service-tajik">Перевод с / на таджикский язык</a>
+                <a href="#service-turkish">Перевод с / на турецкий язык</a>
+              </div>
+
+              <div class="menu-dropdown__group">
+                <p>Перевод документов</p>
+                <a href="#service-passport">Перевод паспорта</a>
+                <a href="#service-attestat">Перевод аттестата</a>
+                <a href="#service-declarations">Перевод деклараций</a>
+                <a href="#service-diploma">Перевод диплома</a>
+                <a href="#service-contract">Перевод договора</a>
+                <a href="#service-certificates-general">Перевод свидетельств</a>
+                <a href="#service-power-of-attorney">Перевод доверенности</a>
+                <a href="#service-other-documents">Другие документы</a>
+                <a href="#service-reference-documents">Перевод справок</a>
+                <a href="#service-travel-consent">Перевод согласия на выезд</a>
+                <a href="#service-employment-record">Перевод трудовой книжки</a>
+                <a href="#service-drivers-license">Перевод водительских прав</a>
+                <a href="#service-corporate-documents">Перевод учредительных документов</a>
+                <a href="#service-extracts">Перевод выписок</a>
+                <a href="#service-grade-books">Перевод зачетных книжек</a>
+                <a href="#service-certificates-translation">Перевод сертификатов</a>
+              </div>
+
+              <div class="menu-dropdown__group">
+                <p>Перевод для посольств</p>
+                <a href="#service-germany-embassy">Посольство Германии</a>
+                <a href="#service-israel-embassy">Посольство Израиля</a>
+                <a href="#service-cyprus-embassy">Посольство Кипра</a>
+                <a href="#service-usa-embassy">Посольство США</a>
+                <a href="#service-thailand-embassy">Посольство Таиланда</a>
+                <a href="#service-uk-embassy">Посольство Великобритании</a>
+              </div>
+
+              <div class="menu-dropdown__standalone">
+                <a href="#service-software-localization">Локализация программного обеспечения</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="#service-notarial-statement">Перевод с нотариальным заявлением</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="#service-visa-documents">Перевод документов для визы</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="#service-game-localization">Локализация игр</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="#service-document-legalization">Легализация документов</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="#service-website-translation">Перевод сайтов</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="#service-stamp-translation">Перевод печати на документе</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="#service-interpreting">Синхронный и последовательный перевод</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="#service-stamp-certification">Заверение перевода печатями</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="#service-certified-translation">Перевод с заверением</a>
+              </div>
+            </div>
+          </div>
+          <a href="#trust">Гарантии</a>
+          <div class="menu-dropdown menu-dropdown--compact">
+            <a class="menu-dropdown__link" href="/pages/about">О нас</a>
+            <button
+              class="menu-dropdown__toggle"
+              type="button"
+              aria-expanded="false"
+              aria-label="Открыть раздел о компании"
+            >
+              <span aria-hidden="true">▾</span>
+            </button>
+            <div class="menu-dropdown__panel" aria-label="О компании">
+              <div class="menu-dropdown__standalone">
+                <a href="/pages/methods">Условия оплаты и методы работы</a>
+              </div>
+              <div class="menu-dropdown__standalone">
+                <a href="/pages/about">О нас</a>
+              </div>
+            </div>
+          </div>
+          <a href="/pages/b2b">B2B</a>
+          <a href="#reviews">Отзывы</a>
           <a href="#contacts">Контакты</a>
-          <a class="menu-phone" href="tel:+375445581642">+375 (44) 558-16-42</a>
+          <div class="menu-contact">
+            <a class="menu-phone" href="tel:+375445581642">+375 (44) 558-16-42</a>
+            <div class="menu-messengers" aria-label="Мессенджеры">
+              <a href="https://wa.me/375445581642" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a href="https://t.me/+375445581642" target="_blank" rel="noreferrer">Telegram</a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
 
     <main id="top">
+      <section id="service-page" class="section service-page" hidden>
+        <div class="container service-page__grid">
+          <article class="service-page__content">
+            <a class="service-page__back" href="/#services">← Все услуги</a>
+            <p class="eyebrow">Услуга бюро переводов</p>
+            <h1 id="service-page-title">Услуга перевода</h1>
+            <p id="service-page-description" class="service-page__lead"></p>
+            <div id="service-page-details" class="service-page__details"></div>
+            <div class="service-page__actions">
+              <a class="btn btn-main" href="#service-order-form">Оставить заявку</a>
+              <a class="btn btn-ghost" href="tel:+375445581642">Позвонить</a>
+            </div>
+          </article>
+
+          <form
+            id="service-order-form"
+            class="contact-form contact-form-v2 service-page__form"
+            action="/api/order"
+            method="post"
+            enctype="multipart/form-data"
+            data-order-form
+          >
+            <div class="form-head">
+              <h3>Отправьте документы на расчет</h3>
+              <p id="service-form-note">Менеджер свяжется с вами после получения заявки.</p>
+            </div>
+
+            <input id="service-form-service" type="hidden" name="service" value="" />
+
+            <label class="visually-hidden" aria-hidden="true">
+              Компания
+              <input type="text" name="company" tabindex="-1" autocomplete="off" />
+            </label>
+
+            <label>
+              Имя
+              <input type="text" name="name" placeholder="Как к вам обращаться" required />
+            </label>
+            <label>
+              Телефон (WhatsApp/Viber) *
+              <input type="tel" name="phone" placeholder="+375 (__) ___-__-__" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="name@example.com" />
+            </label>
+            <label>
+              Срочность
+              <select name="urgency">
+                <option>Обычный срок</option>
+                <option>Срочно сегодня/завтра</option>
+                <option>Очень срочно за 3-6 часов</option>
+              </select>
+            </label>
+            <label>
+              Комментарий к заказу
+              <textarea
+                name="comment"
+                rows="3"
+                placeholder="Укажите язык, страну подачи, требования к заверению и срок"
+              ></textarea>
+            </label>
+
+            <label class="file-field">
+              Прикрепите файлы (jpg, pdf, doc) *
+              <input
+                type="file"
+                name="files"
+                accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.rtf"
+                multiple
+                required
+              />
+              <span class="file-field__button">Выбрать файлы</span>
+              <span class="file-field__text">Можно выбрать несколько файлов. До 5 файлов, каждый до 10 МБ.</span>
+            </label>
+
+            <label class="checkbox checkbox-v2">
+              <input type="checkbox" name="consent" required />
+              <span>
+                Даю согласие на обработку персональных данных согласно
+                <a href="/#policy">политике обработки данных</a>.
+              </span>
+            </label>
+
+            <button class="btn btn-main" type="submit">
+              Отправить заявку → Менеджер ответит через 15 минут
+            </button>
+            <p class="form-status" aria-live="polite" data-form-status></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="content-page" class="section content-page" hidden>
+        <div class="container content-page__wrap">
+          <a class="service-page__back" href="/">← На главную</a>
+          <p id="content-page-eyebrow" class="eyebrow"></p>
+          <h1 id="content-page-title">Страница</h1>
+          <p id="content-page-lead" class="content-page__lead"></p>
+          <div id="content-page-sections" class="content-page__sections"></div>
+          <div class="content-page__actions">
+            <a class="btn btn-main" href="/#order-form">Оставить заявку</a>
+            <a class="btn btn-ghost" href="tel:+375445581642">Позвонить</a>
+          </div>
+        </div>
+      </section>
+
       <section class="hero section-reveal">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">Бюро переводов в Минске</p>
+            <p class="eyebrow">Бюро переводов в Минске для частных клиентов и бизнеса</p>
             <h1>Переводы, которые принимают с первого раза</h1>
             <p class="lead">
-              Официальные документы, бизнес-контракты, технические тексты и медицинские справки.
-              Работаем быстро, точно и с соблюдением требований посольств и госорганов.
+              <span>Для госорганов, посольств, виз.</span>
+              <span>Для бизнеса и частных клиентов.</span>
             </p>
 
+            <div class="hero-alert" role="note">
+              <strong>Срочно за 3 часа</strong>
+              <span>с наценкой <strong>+50%</strong> к базовой стоимости.</span>
+            </div>
+
             <div class="hero-actions">
-              <a class="btn btn-main" href="#contacts">Оставить заявку</a>
+              <a class="btn btn-main" href="#order-form">Оставить заявку</a>
               <a class="btn btn-ghost" href="#services">Смотреть услуги</a>
             </div>
 
             <ul class="hero-points">
-              <li>Нотариальное заверение и апостиль</li>
-              <li>Срочные заказы в день обращения</li>
-              <li>Дистанционная подача документов</li>
+              <li>Нотариальное заверение, апостиль и легализация</li>
+              <li>Договор, счет, акт и безналичная оплата для юрлиц</li>
+              <li>Загрузка файлов, дистанционная подача и конфиденциальность</li>
             </ul>
           </div>
 
@@ -81,18 +333,22 @@
             <dl>
               <div>
                 <dt>14+</dt>
-                <dd>лет на рынке переводов</dd>
+                <dd>лет в переводах и сопровождении документов</dd>
               </div>
               <div>
                 <dt>50+</dt>
-                <dd>языковых направлений</dd>
+                <dd>языковых направлений для личных и корпоративных задач</dd>
               </div>
               <div>
-                <dt>24/7</dt>
-                <dd>прием заявок онлайн</dd>
+                <dt>ООО</dt>
+                <dd>официальные реквизиты, УНП и работа по договору</dd>
               </div>
             </dl>
-            <p>Офис: Минск, ул. Воронянского 7А, офис 801</p>
+            <div class="hero-card__note">
+              <p><strong>ООО «ПереводБай»</strong></p>
+              <p>УНП 193641759</p>
+              <p>Минск, Воронянского 7А, 8 этаж, офис 801</p>
+            </div>
           </aside>
         </div>
       </section>
@@ -101,34 +357,422 @@
         <div class="container">
           <div class="section-head">
             <p class="eyebrow">Что мы переводим</p>
-            <h2>Услуги под личные и бизнес-задачи</h2>
+            <h2>Услуги и цены</h2>
+            <p class="section-text">
+              Стоимость зависит от языка, объема, тематики и требований к заверению, но клиент
+              сразу видит ориентир еще до звонка менеджера.
+            </p>
           </div>
 
-          <div class="cards">
-            <article class="card">
-              <h3>Личные документы</h3>
-              <p>Паспорта, свидетельства, справки, дипломы, доверенности.</p>
+          <div class="services-catalog">
+            <article class="services-category" data-service-category>
+              <div class="services-category__head">
+                <h3>Апостиль и заверение</h3>
+                <button
+                  class="services-category__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="services-category-apostille"
+                >
+                  Открыть список
+                </button>
+              </div>
+              <ul id="services-category-apostille" class="services-list" data-service-panel hidden>
+                <li id="service-apostille">Апостиль документов</li>
+                <li id="service-notarial-statement">Перевод с нотариальным заявлением</li>
+                <li id="service-document-legalization">Легализация документов</li>
+                <li id="service-stamp-certification">Заверение перевода печатями</li>
+                <li id="service-certified-translation">Перевод с заверением</li>
+              </ul>
             </article>
-            <article class="card">
-              <h3>Юридические тексты</h3>
-              <p>Договоры, учредительные документы, судебные материалы.</p>
+
+            <article class="services-category" data-service-category>
+              <div class="services-category__head">
+                <h3>Отраслевой перевод</h3>
+                <button
+                  class="services-category__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="services-category-industry"
+                >
+                  Открыть список
+                </button>
+              </div>
+              <ul id="services-category-industry" class="services-list" data-service-panel hidden>
+                <li id="service-economic-translation">Экономический перевод</li>
+                <li id="service-pharma-translation">Фармацевтический перевод</li>
+                <li id="service-medical-translation">Медицинский перевод</li>
+                <li id="service-tourism-translation">Перевод для турагентства</li>
+                <li id="service-engineering-translation">Перевод конструкторской документации</li>
+                <li id="service-commercial-translation">Перевод коммерческих документов</li>
+                <li id="service-instruction-translation">Перевод инструкций</li>
+                <li id="service-legal-translation">Юридический перевод</li>
+                <li id="service-technical-translation">Технический перевод</li>
+              </ul>
             </article>
-            <article class="card">
-              <h3>Технический перевод</h3>
-              <p>Инструкции, спецификации, чертежи, производственная документация.</p>
+
+            <article class="services-category" data-service-category>
+              <div class="services-category__head">
+                <h3>Языковые переводы</h3>
+                <button
+                  class="services-category__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="services-category-languages"
+                >
+                  Открыть список
+                </button>
+              </div>
+              <ul
+                id="services-category-languages"
+                class="services-list services-list--wide"
+                data-service-panel
+                hidden
+              >
+                <li id="service-english">Перевод с / на английский язык</li>
+                <li id="service-arabic">Перевод с / на арабский язык</li>
+                <li id="service-armenian">Перевод с / на армянский язык</li>
+                <li id="service-french">Перевод с / на французский язык</li>
+                <li id="service-greek">Перевод с / на греческий язык</li>
+                <li id="service-georgian">Перевод с / на грузинский язык</li>
+                <li id="service-spanish">Перевод с / на испанский язык</li>
+                <li id="service-italian">Перевод с / на итальянский язык</li>
+                <li id="service-hebrew">Перевод с / на иврит</li>
+                <li id="service-kazakh">Перевод с / на казахский язык</li>
+                <li id="service-chinese">Перевод с / на китайский язык</li>
+                <li id="service-latvian">Перевод с / на латышский язык</li>
+                <li id="service-lithuanian">Перевод с / на литовский язык</li>
+                <li id="service-german">Перевод с / на немецкий язык</li>
+                <li id="service-persian">Перевод с / на персидский язык</li>
+                <li id="service-polish">Перевод с / на польский язык</li>
+                <li id="service-portuguese">Перевод с / на португальский язык</li>
+                <li id="service-romanian">Перевод с / на румынский язык</li>
+                <li id="service-serbian">Перевод с / на сербский язык</li>
+                <li id="service-tajik">Перевод с / на таджикский язык</li>
+                <li id="service-turkish">Перевод с / на турецкий язык</li>
+              </ul>
             </article>
-            <article class="card">
-              <h3>Медицинский перевод</h3>
-              <p>Заключения, выписки, анализы, документация для лечения за рубежом.</p>
+
+            <article class="services-category" data-service-category>
+              <div class="services-category__head">
+                <h3>Перевод документов</h3>
+                <button
+                  class="services-category__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="services-category-documents"
+                >
+                  Открыть список
+                </button>
+              </div>
+              <ul
+                id="services-category-documents"
+                class="services-list services-list--wide"
+                data-service-panel
+                hidden
+              >
+                <li id="service-passport">Перевод паспорта</li>
+                <li id="service-attestat">Перевод аттестата</li>
+                <li id="service-declarations">Перевод деклараций</li>
+                <li id="service-diploma">Перевод диплома</li>
+                <li id="service-contract">Перевод договора</li>
+                <li id="service-certificates-general">Перевод свидетельств</li>
+                <li id="service-power-of-attorney">Перевод доверенности</li>
+                <li id="service-other-documents">Другие документы</li>
+                <li id="service-reference-documents">Перевод справок</li>
+                <li id="service-travel-consent">Перевод согласия на выезд</li>
+                <li id="service-employment-record">Перевод трудовой книжки</li>
+                <li id="service-drivers-license">Перевод водительских прав</li>
+                <li id="service-corporate-documents">Перевод учредительных документов</li>
+                <li id="service-extracts">Перевод выписок</li>
+                <li id="service-grade-books">Перевод зачетных книжек</li>
+                <li id="service-certificates-translation">Перевод сертификатов</li>
+              </ul>
             </article>
-            <article class="card">
-              <h3>Для посольств и виз</h3>
-              <p>Подготовка пакета документов с учетом требований конкретной страны.</p>
+
+            <article class="services-category" data-service-category>
+              <div class="services-category__head">
+                <h3>Перевод для посольств</h3>
+                <button
+                  class="services-category__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="services-category-embassy"
+                >
+                  Открыть список
+                </button>
+              </div>
+              <ul id="services-category-embassy" class="services-list" data-service-panel hidden>
+                <li id="service-germany-embassy">Посольство Германии</li>
+                <li id="service-israel-embassy">Посольство Израиля</li>
+                <li id="service-cyprus-embassy">Посольство Кипра</li>
+                <li id="service-usa-embassy">Посольство США</li>
+                <li id="service-thailand-embassy">Посольство Таиланда</li>
+                <li id="service-uk-embassy">Посольство Великобритании</li>
+                <li id="service-visa-documents">Перевод документов для визы</li>
+              </ul>
             </article>
-            <article class="card">
-              <h3>Апостиль и легализация</h3>
-              <p>Сопровождаем процесс и подсказываем по срокам и доверенности.</p>
+
+            <article class="services-category" data-service-category>
+              <div class="services-category__head">
+                <h3>Локализация и спецуслуги</h3>
+                <button
+                  class="services-category__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="services-category-special"
+                >
+                  Открыть список
+                </button>
+              </div>
+              <ul id="services-category-special" class="services-list" data-service-panel hidden>
+                <li id="service-software-localization">Локализация программного обеспечения</li>
+                <li id="service-game-localization">Локализация игр</li>
+                <li id="service-website-translation">Перевод сайтов</li>
+                <li id="service-stamp-translation">Перевод печати на документе</li>
+                <li id="service-interpreting">Синхронный и последовательный перевод</li>
+              </ul>
             </article>
+          </div>
+
+          <div class="price-board">
+            <div class="price-board__head">
+              <div>
+                <h3>Стоимость письменного перевода</h3>
+                <p>Цена указана за одну переводческую страницу. Срочный заказ за 3 часа: +50%.</p>
+              </div>
+              <a class="btn btn-ghost price-board__cta" href="#order-form">Рассчитать по файлу</a>
+            </div>
+
+            <div class="language-price-grid">
+              <div class="price-list">
+                <div class="price-row"><span>Английский</span><strong>от 20,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Немецкий</span><strong>от 20,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Польский</span><strong>от 25,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Литовский</span><strong>от 26,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Итальянский</span><strong>от 30,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Иврит</span><strong>от 45,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Персидский</span><strong>от 40,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Французский</span><strong>от 26,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Турецкий</span><strong>от 35,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Китайский</span><strong>от 45,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Арабский</span><strong>от 35,00 BYN/стр.</strong></div>
+              </div>
+
+              <div class="price-list">
+                <div class="price-row"><span>Армянский</span><strong>от 45,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Греческий</span><strong>от 40,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Грузинский</span><strong>от 45,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Испанский</span><strong>от 25,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Латышский</span><strong>от 30,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Молдавский</span><strong>от 45,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Румынский</span><strong>от 45,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Португальский</span><strong>от 40,00 BYN/стр.</strong></div>
+                <div class="price-row"><span>Другие языки</span><strong>цена по запросу</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="extra-services">
+            <div class="extra-services__head">
+              <h3>Дополнительные услуги перевода</h3>
+              <p>Стоимость указана в BYN за один документ, если не указано иначе.</p>
+            </div>
+            <div class="extra-service-table">
+              <div class="extra-service-row">
+                <span>Нотариальное заверение копии на 1 листе</span>
+                <strong>40,00 BYN</strong>
+              </div>
+              <div class="extra-service-row">
+                <span>Нотариальное заверение копии на 2 листах</span>
+                <strong>60,00 BYN</strong>
+              </div>
+              <div class="extra-service-row">
+                <span>Нотариальное заверение подписи переводчика на иностранный язык</span>
+                <strong>120,00 BYN</strong>
+              </div>
+              <div class="extra-service-row">
+                <span>Нотариальное заверение подписи переводчика на русский язык</span>
+                <strong>60,00 BYN</strong>
+              </div>
+              <div class="extra-service-row">
+                <span>Доставка документов по городу</span>
+                <strong>15,00 BYN</strong>
+              </div>
+              <div class="extra-service-row">
+                <span>Апостиль МИД</span>
+                <strong>420,00 BYN</strong>
+              </div>
+              <div class="extra-service-row">
+                <span>Апостиль МинЮст</span>
+                <strong>420,00 BYN</strong>
+              </div>
+              <div class="extra-service-row">
+                <span>Легализация (МинЮст + МИД)</span>
+                <strong>380,00 BYN</strong>
+              </div>
+              <div class="extra-service-row">
+                <span>Заверение печатью Бюро переводов</span>
+                <strong>10,00 BYN</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="examples" class="section examples section-reveal">
+        <div class="container">
+          <div class="section-head reviews-head">
+            <div>
+              <p class="eyebrow">Примеры переводов</p>
+              <h2>Как выглядят готовые переводы документов</h2>
+              <p class="section-text">
+                Фрагменты ниже показывают формат подачи, терминологию и уровень детализации, который
+                мы используем для посольств, госорганов и бизнеса.
+              </p>
+            </div>
+            <div class="carousel-controls" aria-label="Управление примерами переводов">
+              <button class="carousel-btn" type="button" data-examples-prev aria-label="Назад">
+                ←
+              </button>
+              <button class="carousel-btn" type="button" data-examples-next aria-label="Вперед">
+                →
+              </button>
+            </div>
+          </div>
+
+          <div class="examples-carousel" data-examples-carousel>
+            <div class="examples-track" data-examples-track>
+              <article class="example-card is-active" data-examples-slide>
+              <div class="example-meta">
+                <strong>Свидетельство о рождении</strong>
+                <span>RU → EN • 1 день • от 35 BYN</span>
+              </div>
+              <div class="example-photos">
+                <a class="example-photo" href="/assets/example-before.svg" target="_blank" rel="noreferrer">
+                  <img src="/assets/example-before.svg" alt="Свидетельство о рождении до перевода" loading="lazy" />
+                  <span>Фото до</span>
+                </a>
+                <a class="example-photo" href="/assets/example-after.svg" target="_blank" rel="noreferrer">
+                  <img src="/assets/example-after.svg" alt="Свидетельство о рождении после перевода" loading="lazy" />
+                  <span>Фото после</span>
+                </a>
+              </div>
+              <p class="example-label">Оригинал:</p>
+              <p class="example-text">«Место рождения: г. Минск, Республика Беларусь»</p>
+              <p class="example-label">Перевод:</p>
+              <p class="example-text">“Place of birth: Minsk, Republic of Belarus”</p>
+              </article>
+
+              <article class="example-card" data-examples-slide>
+              <div class="example-meta">
+                <strong>Договор поставки</strong>
+                <span>RU → DE • 2 дня • от 45 BYN/стр.</span>
+              </div>
+              <div class="example-photos">
+                <a class="example-photo" href="/assets/example-before.svg" target="_blank" rel="noreferrer">
+                  <img src="/assets/example-before.svg" alt="Договор поставки до перевода" loading="lazy" />
+                  <span>Фото до</span>
+                </a>
+                <a class="example-photo" href="/assets/example-after.svg" target="_blank" rel="noreferrer">
+                  <img src="/assets/example-after.svg" alt="Договор поставки после перевода" loading="lazy" />
+                  <span>Фото после</span>
+                </a>
+              </div>
+              <p class="example-label">Оригинал:</p>
+              <p class="example-text">«Стороны несут ответственность за нарушение сроков поставки»</p>
+              <p class="example-label">Перевод:</p>
+              <p class="example-text">
+                “Die Parteien haften für die Nichteinhaltung der Lieferfristen.”
+              </p>
+              </article>
+
+              <article class="example-card" data-examples-slide>
+              <div class="example-meta">
+                <strong>Медицинская выписка</strong>
+                <span>RU → PL • 1 день • от 48 BYN/стр.</span>
+              </div>
+              <div class="example-photos">
+                <a class="example-photo" href="/assets/example-before.svg" target="_blank" rel="noreferrer">
+                  <img src="/assets/example-before.svg" alt="Медицинская выписка до перевода" loading="lazy" />
+                  <span>Фото до</span>
+                </a>
+                <a class="example-photo" href="/assets/example-after.svg" target="_blank" rel="noreferrer">
+                  <img src="/assets/example-after.svg" alt="Медицинская выписка после перевода" loading="lazy" />
+                  <span>Фото после</span>
+                </a>
+              </div>
+              <p class="example-label">Оригинал:</p>
+              <p class="example-text">«Заключение: рекомендовано амбулаторное наблюдение»</p>
+              <p class="example-label">Перевод:</p>
+              <p class="example-text">
+                “Wniosek: zalecana jest dalsza obserwacja ambulatoryjna.”
+              </p>
+              </article>
+
+              <article class="example-card" data-examples-slide>
+              <div class="example-meta">
+                <strong>Справка для посольства</strong>
+                <span>RU → EN • 1 день • от 40 BYN</span>
+              </div>
+              <div class="example-photos">
+                <a class="example-photo" href="/assets/example-before.svg" target="_blank" rel="noreferrer">
+                  <img src="/assets/example-before.svg" alt="Справка для посольства до перевода" loading="lazy" />
+                  <span>Фото до</span>
+                </a>
+                <a class="example-photo" href="/assets/example-after.svg" target="_blank" rel="noreferrer">
+                  <img src="/assets/example-after.svg" alt="Справка для посольства после перевода" loading="lazy" />
+                  <span>Фото после</span>
+                </a>
+              </div>
+              <p class="example-label">Оригинал:</p>
+              <p class="example-text">«Выдана для предоставления в консульский отдел»</p>
+              <p class="example-label">Перевод:</p>
+              <p class="example-text">“Issued for submission to the Consular Section.”</p>
+              </article>
+            </div>
+            <div class="carousel-dots examples-dots" data-examples-dots></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="trust" class="section trust section-reveal">
+        <div class="container trust-grid">
+          <div>
+            <div class="section-head">
+              <p class="eyebrow">Почему нам доверяют</p>
+              <h2>Для юрлиц, посольств и конфиденциальных документов</h2>
+            </div>
+            <div class="trust-points">
+              <article class="trust-item">
+                <h3>Реквизиты и документы</h3>
+                <p>Работаем как ООО, предоставляем договор, счет, акт и закрывающие документы.</p>
+              </article>
+              <article class="trust-item">
+                <h3>Требования инстанций</h3>
+                <p>Учитываем формат, написание ФИО, печати, заверение и требования посольств.</p>
+              </article>
+              <article class="trust-item">
+                <h3>Конфиденциальность</h3>
+                <p>Документы обрабатываются только для расчета, перевода и выдачи готового пакета.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="trust-docs">
+            <h3>Что получает корпоративный клиент</h3>
+            <ul>
+              <li>Работа по безналу и оплата через ЕРИП</li>
+              <li>Менеджер на связи по телефону, WhatsApp и Telegram</li>
+              <li>Фиксация цены и срока до старта работы</li>
+              <li>Подготовка пакета для нотариуса, визы или тендера</li>
+            </ul>
+            <div class="company-card">
+              <p><strong>ООО «ПереводБай»</strong></p>
+              <p>УНП: 193641759</p>
+              <p>Офис: г. Минск, Воронянского 7А, 8 этаж, офис 801</p>
+              <p>График: Пн-Пт, 10:00-18:00</p>
+            </div>
           </div>
         </div>
       </section>
@@ -144,96 +788,344 @@
             <li>
               <span>1</span>
               <div>
-                <h3>Отправляете документы</h3>
-                <p>В мессенджер, на email или приносите в офис.</p>
+                <h3>Загружаете файлы или пишете в мессенджер</h3>
+                <p>Форму, WhatsApp и Telegram можно использовать без визита в офис.</p>
               </div>
             </li>
             <li>
               <span>2</span>
               <div>
-                <h3>Согласуем сроки и цену</h3>
-                <p>Фиксируем стоимость до старта работ.</p>
+                <h3>Согласуем цену, срок и срочность</h3>
+                <p>Для заказа за 3 часа применяется фиксированная наценка +50%.</p>
               </div>
             </li>
             <li>
               <span>3</span>
               <div>
-                <h3>Делаем перевод и заверение</h3>
-                <p>Подготавливаем документы под требования инстанций.</p>
+                <h3>Готовим перевод под конкретную подачу</h3>
+                <p>Проверяем оформление под нотариуса, госорганы, посольство или компанию.</p>
               </div>
             </li>
             <li>
               <span>4</span>
               <div>
-                <h3>Передаем готовый пакет</h3>
-                <p>Самовывоз, курьер или отправка удобным способом.</p>
+                <h3>Передаем готовый пакет и закрывающие документы</h3>
+                <p>Самовывоз, курьер, электронная отправка и документы для бухгалтерии.</p>
               </div>
             </li>
           </ol>
         </div>
       </section>
 
-      <section id="about" class="section about section-reveal">
-        <div class="container about-grid">
-          <div>
-            <p class="eyebrow">Почему ПереводБай</p>
-            <h2>Точность формулировок и ответственность за результат</h2>
-            <p>
-              Работаем с 2012 года и закрываем задачи от срочного перевода одного документа до
-              комплексного сопровождения компаний. Наша команда учитывает терминологию отрасли и
-              проверяет формат под требования принимающей стороны.
-            </p>
+      <section id="reviews" class="section reviews section-reveal">
+        <div class="container">
+          <div class="section-head reviews-head">
+            <div>
+              <p class="eyebrow">Отзывы и кейсы</p>
+              <h2>Что ценят клиенты в работе с нами</h2>
+            </div>
+            <div class="carousel-controls" aria-label="Управление отзывами">
+              <button class="carousel-btn" type="button" data-carousel-prev aria-label="Назад">
+                ←
+              </button>
+              <button class="carousel-btn" type="button" data-carousel-next aria-label="Вперед">
+                →
+              </button>
+            </div>
           </div>
-          <div class="about-tags">
-            <span>Конфиденциальность</span>
-            <span>Опытные переводчики</span>
-            <span>Соблюдение дедлайнов</span>
-            <span>Удобная оплата</span>
-            <span>Поддержка менеджера</span>
-            <span>Работаем по договору</span>
+
+          <div class="reviews-carousel" data-carousel>
+            <div class="reviews-track" data-carousel-track>
+              <article class="review-card is-active" data-carousel-slide>
+                <p class="review-text">
+                  Перевод и заверение для подачи в посольство подготовили без лишних правок и в
+                  обещанный срок.
+                </p>
+                <p class="review-author">Клиент по визовым документам</p>
+                <p class="review-meta">Частный заказ, срочная подача</p>
+              </article>
+              <article class="review-card" data-carousel-slide>
+                <p class="review-text">
+                  Для компании важно было получить договор, счет и комплект переводов в одном месте
+                  без затяжных согласований.
+                </p>
+                <p class="review-author">Менеджер B2B-клиента</p>
+                <p class="review-meta">Учредительные и договорные документы</p>
+              </article>
+              <article class="review-card" data-carousel-slide>
+                <p class="review-text">
+                  Медицинские документы приняли с первого раза, менеджер заранее уточнил
+                  требования и формат для клиники.
+                </p>
+                <p class="review-author">Клиент по лечению за рубежом</p>
+                <p class="review-meta">Перевод выписок и справок</p>
+              </article>
+            </div>
+            <div class="carousel-dots" data-carousel-dots aria-label="Индикаторы отзывов"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews-main" class="section reviews section-reveal">
+        <div class="container">
+          <div class="section-head reviews-head">
+            <div>
+              <p class="eyebrow">Отзывы клиентов</p>
+              <h2>Что говорят после готового перевода</h2>
+            </div>
+            <div class="carousel-controls" aria-label="Управление отзывами клиентов">
+              <button class="carousel-btn" type="button" data-main-reviews-prev aria-label="Назад">
+                ←
+              </button>
+              <button class="carousel-btn" type="button" data-main-reviews-next aria-label="Вперед">
+                →
+              </button>
+            </div>
+          </div>
+
+          <div class="reviews-carousel" data-main-reviews>
+            <div class="reviews-track reviews-track--cards" data-main-reviews-track>
+              <article class="review-card review-card--soft is-active" data-main-reviews-slide>
+                <p class="review-text">
+                  “Быстро рассчитали стоимость, подсказали по заверению и подготовили перевод для
+                  подачи без переделок.”
+                </p>
+                <p class="review-author">Анна</p>
+                <p class="review-meta">Перевод свидетельства и справки</p>
+              </article>
+              <article class="review-card review-card--soft" data-main-reviews-slide>
+                <p class="review-text">
+                  “Нужно было срочно перевести пакет документов для компании. Получили счет, акт и
+                  готовые файлы в согласованный срок.”
+                </p>
+                <p class="review-author">Корпоративный клиент</p>
+                <p class="review-meta">Договоры и учредительные документы</p>
+              </article>
+              <article class="review-card review-card--soft" data-main-reviews-slide>
+                <p class="review-text">
+                  “Отправила документы дистанционно, менеджер всё уточнил в мессенджере. Очень
+                  удобно, что не пришлось ехать в офис два раза.”
+                </p>
+                <p class="review-author">Елена</p>
+                <p class="review-meta">Документы для посольства</p>
+              </article>
+            </div>
+            <div class="carousel-dots" data-main-reviews-dots aria-label="Индикаторы отзывов"></div>
           </div>
         </div>
       </section>
 
       <section id="contacts" class="section contacts section-reveal">
         <div class="container contact-grid">
-          <div>
-            <p class="eyebrow">Связаться с нами</p>
-            <h2>Оставьте заявку, и мы ответим в рабочее время</h2>
+          <div class="contact-panel">
+            <div>
+              <p class="eyebrow">Связаться с нами</p>
+              <h2>Оставьте заявку или напишите в удобный канал</h2>
+            </div>
+
             <ul class="contact-list">
               <li><strong>Телефон:</strong> <a href="tel:+375445581642">+375 (44) 558-16-42</a></li>
-              <li><strong>Email:</strong> <a href="mailto:perevodby24@gmail.com">perevodby24@gmail.com</a></li>
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:perevodby24@gmail.com">perevodby24@gmail.com</a>
+              </li>
               <li><strong>График:</strong> Пн-Пт, 10:00-18:00</li>
               <li><strong>Адрес:</strong> Минск, Воронянского 7А, офис 801</li>
             </ul>
+
+            <div class="contact-actions">
+              <a class="btn btn-main" href="tel:+375445581642">Позвонить</a>
+              <a class="btn btn-ghost" href="https://wa.me/375445581642" target="_blank" rel="noreferrer">
+                WhatsApp
+              </a>
+              <a class="btn btn-ghost" href="https://t.me/+375445581642" target="_blank" rel="noreferrer">
+                Telegram
+              </a>
+            </div>
+
+            <div class="map-card" aria-label="Карта офиса">
+              <div class="map-card__pin">PB</div>
+              <div>
+                <p class="map-card__title">Офис у метро «Ковальская Слобода»</p>
+                <p class="map-card__text">Воронянского 7А, 8 этаж, офис 801</p>
+                <a
+                  class="map-card__link"
+                  href="https://yandex.by/maps/?text=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%20%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D1%8F%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%207%D0%90"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Открыть карту
+                </a>
+              </div>
+            </div>
           </div>
 
-          <form class="contact-form" action="#" method="post">
+          <form
+            id="order-form"
+            class="contact-form contact-form-v2"
+            action="/api/order"
+            method="post"
+            enctype="multipart/form-data"
+            data-order-form
+          >
+            <div class="form-head">
+              <h3>Отправьте документы прямо сейчас</h3>
+              <p>Менеджер свяжется с вами после получения заявки и файлов.</p>
+            </div>
+
+            <label class="visually-hidden" aria-hidden="true">
+              Компания
+              <input type="text" name="company" tabindex="-1" autocomplete="off" />
+            </label>
+
             <label>
               Имя
               <input type="text" name="name" placeholder="Как к вам обращаться" required />
             </label>
             <label>
-              Телефон
+              Телефон (WhatsApp/Viber) *
               <input type="tel" name="phone" placeholder="+375 (__) ___-__-__" required />
             </label>
             <label>
-              Что нужно перевести
-              <textarea name="message" rows="4" placeholder="Кратко опишите задачу"></textarea>
+              Email
+              <input type="email" name="email" placeholder="name@example.com" />
             </label>
-            <button class="btn btn-main" type="submit">Отправить заявку</button>
+            <label>
+              Тип перевода
+              <select name="service">
+                <option>Личные документы</option>
+                <option>Юридические тексты</option>
+                <option>Технический перевод</option>
+                <option>Медицинский перевод</option>
+                <option>Для посольств и виз</option>
+                <option>Другое</option>
+              </select>
+            </label>
+            <label>
+              Срочность
+              <select name="urgency">
+                <option>Обычный (2-3 дня)</option>
+                <option>Срочно (сегодня/завтра)</option>
+                <option>Очень срочно (3-6 часов)</option>
+              </select>
+            </label>
+            <label>
+              Комментарий к заказу
+              <textarea
+                name="comment"
+                rows="3"
+                placeholder="Кратко опишите задачу: язык, тип документа, нужен ли нотариус или срочное выполнение"
+              ></textarea>
+            </label>
+
+            <label class="file-field">
+              Прикрепите файлы (jpg, pdf, doc) *
+              <input
+                id="file-upload"
+                type="file"
+                name="files"
+                accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.rtf"
+                multiple
+                required
+              />
+              <span class="file-field__button">Выбрать файлы</span>
+              <span id="file-upload-text" class="file-field__text">
+                Можно выбрать несколько файлов. До 5 файлов, каждый до 10 МБ.
+              </span>
+            </label>
+            <div id="file-preview-list" class="file-preview-list" aria-live="polite"></div>
+
+            <label class="checkbox checkbox-v2">
+              <input type="checkbox" name="consent" required />
+              <span>
+                Даю согласие на обработку персональных данных согласно
+                <a href="#policy">политике обработки данных</a>.
+              </span>
+            </label>
+
+            <button class="btn btn-main" type="submit">
+              Отправить заявку → Менеджер ответит через 15 минут
+            </button>
+            <p id="form-status" class="form-status" aria-live="polite" data-form-status></p>
           </form>
+        </div>
+      </section>
+
+      <section id="policy" class="section policy section-reveal">
+        <div class="container policy-card">
+          <div class="section-head">
+            <p class="eyebrow">Политика обработки данных</p>
+            <h2>Кратко о защите персональных данных</h2>
+          </div>
+          <div class="policy-grid">
+            <article>
+              <h3>Что собираем</h3>
+              <p>Имя, телефон, email, комментарий к заказу и файлы, которые вы прикладываете.</p>
+            </article>
+            <article>
+              <h3>Зачем собираем</h3>
+              <p>Чтобы рассчитать стоимость, связаться по заказу, выполнить перевод и выдать результат.</p>
+            </article>
+            <article>
+              <h3>Как защищаем</h3>
+              <p>Доступ к данным ограничен сотрудниками, которые участвуют в обработке вашего заказа.</p>
+            </article>
+            <article>
+              <h3>Ваши права</h3>
+              <p>
+                Вы можете запросить информацию об обработке данных, уточнение или отзыв согласия в
+                пределах, допустимых законодательством Республики Беларусь.
+              </p>
+            </article>
+          </div>
+          <p class="policy-note">
+            Политика размещена во исполнение требований законодательства Республики Беларусь о
+            защите персональных данных, включая Закон РБ от 7 мая 2021 г. № 99-З.
+          </p>
         </div>
       </section>
     </main>
 
+    <div id="preview-modal" class="preview-modal" hidden>
+      <div class="preview-modal__backdrop" data-preview-close></div>
+      <div class="preview-modal__dialog" role="dialog" aria-modal="true" aria-label="Предпросмотр файла">
+        <div class="preview-modal__header">
+          <div class="preview-modal__meta">
+            <span class="preview-modal__eyebrow">Просмотр документа</span>
+            <p id="preview-modal-title" class="preview-modal__title"></p>
+          </div>
+          <button type="button" class="preview-modal__close" data-preview-close aria-label="Закрыть">
+            Закрыть
+          </button>
+        </div>
+        <div class="preview-modal__stage">
+          <div id="preview-modal-content" class="preview-modal__content"></div>
+        </div>
+        <div id="preview-modal-switch" class="preview-modal__switch" hidden>
+          <button id="preview-before-btn" type="button" class="preview-switch-btn">Фото до</button>
+          <button id="preview-after-btn" type="button" class="preview-switch-btn">Фото после</button>
+        </div>
+      </div>
+    </div>
+
     <footer class="site-footer">
       <div class="container footer-wrap">
-        <p>© <span id="year"></span> ПереводБай. Все права защищены.</p>
-        <a href="#top">Наверх</a>
+        <div class="footer-copy">
+          <p>© <span id="year"></span> ООО «ПереводБай». Все права защищены.</p>
+          <p>УНП 193641759 • Минск, Воронянского 7А, офис 801</p>
+        </div>
+        <div class="footer-links">
+          <a href="/pages/offer">Договор публичной оферты</a>
+          <a href="/pages/privacy">Политика конфиденциальности</a>
+          <a href="/pages/methods">Условия оплаты</a>
+          <a href="#top">Наверх</a>
+        </div>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/services-data.js"></script>
+    <script src="/services-content.js"></script>
+    <script src="/pages-data.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
